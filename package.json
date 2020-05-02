@@ -1,0 +1,30 @@
+{
+  "name": "basic-github-action",
+  "version": "1.0.0",
+  "description": "Basic GitHub Actions",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write src/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesnswithers/basic-github-action.git"
+  },
+  "keywords": [
+    "actions",
+    "pull",
+    "validate"
+  ],
+  "author": "James Withers",
+  "homepage": "https://github.com/jamesnswithers/basic-github-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
+  }
+}

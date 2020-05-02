@@ -1,0 +1,13 @@
+name: Basic GitHub Action
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: ['opened', 'edited', 'reopened', 'synchronize']
+
+jobs:
+  basic-github-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jamesnswithers/basic-github-action@master
