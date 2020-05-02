@@ -4,7 +4,7 @@
   "description": "Basic GitHub Actions",
   "main": "lib/main.js",
   "scripts": {
-    "build": "ncc build src/main.ts",
+    "build": "tsc",
     "format": "prettier --write src/*.ts"
   },
   "repository": {
@@ -20,8 +20,7 @@
   "homepage": "https://github.com/jamesnswithers/basic-github-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@actions/github": "^2.1.1",
-    "ncc": "^0.3.6"
+    "@actions/github": "^2.1.1"
   },
   "devDependencies": {
     "@types/node": "^13.13.4",
