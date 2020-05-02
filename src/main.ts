@@ -9,10 +9,10 @@ async function run() {
       title = context!.payload!.pull_request!.title;
 
     core.info(`Checking "${title}" against "${titleToMatch}".`);
-    if (title.match(new RegExp(titleRegex, 'g'))) {
-      core.info(`Match found for PR title "${title}" using regex "${titleRegex}".`);
+    if (title === titleToMatch) {
+      core.info(`Match found for PR title "${title}" when comparing "${titleToMatch}".`);
     } else {
-      core.setFailed(failureMessage);
+      core.setFailed(`Title ${title} does not match ${titleToMatch}`);
     }
   } catch (error) {
     core.setFailed(error.message);
