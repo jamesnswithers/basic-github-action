@@ -1,0 +1,9 @@
+name: 'Basic GitHub Action'
+description: 'Basic GitHub Actions for testing'
+author: 'jamesnswithers'
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
+branding:
+  icon: 'edit-3'
+  color: 'blue'
